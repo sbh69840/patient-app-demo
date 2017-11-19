@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical" android:layout_width="match_parent" android:background="#ffffff"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:id="@+id/email_cancel"
+        android:tint="#000000"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingStart="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Email address"/>
+    <TextView
+        android:layout_width="300dp"
+        android:paddingTop="80dp"
+        android:paddingStart="60dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="We will send you a quick email confirmation to verify your email address"/>
+    <CheckBox
+        android:id="@+id/checkBox_email"
+        android:layout_width="265dp"
+
+        android:layout_marginTop="70dp"
+
+        android:layout_marginStart="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="I understand" />
+
+    <Button
+        android:id="@+id/button_wow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_gravity="bottom|center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:text="Next" />
+</LinearLayout>

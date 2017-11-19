@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#9966cc"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <ImageView
+        android:layout_width="16dp"
+        android:id="@+id/toolbar_back_tr"
+        android:layout_height="16dp"
+        android:src="@mipmap/back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_track"
+        android:layout_marginStart="50dp"
+        android:textColor="#ffffff"
+        android:text="Tracking day change"
+        android:fontFamily="serif-monospace"
+        android:paddingRight="20dp"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/menu_track"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/menuwhitedots"
+        android:layout_marginStart="10dp"
+        android:foregroundGravity="right"
+        />
+</android.support.v7.widget.Toolbar>

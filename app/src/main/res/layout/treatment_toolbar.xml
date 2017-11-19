@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#9966cc"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/wtback"
+        android:src="@mipmap/back"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/one"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="100dp"
+        android:src="@mipmap/onewhite"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/two"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="14dp"
+        android:src="@mipmap/twowhite"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/three"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="14dp"
+        android:src="@mipmap/threewhite"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/four"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="14dp"
+        android:src="@mipmap/fourwhite"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/five"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="14dp"
+        android:src="@mipmap/fivewhite"
+        />
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/six"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="14dp"
+        android:src="@mipmap/sixwhite"
+        />
+
+</android.support.v7.widget.Toolbar>

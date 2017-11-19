@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:textSize="20sp"
+    android:textAlignment="center"
+    android:paddingTop="15dp"
+    android:id="@+id/mail"
+    android:text="Email@gmail.com"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#6699cc"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:id="@+id/phone"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:text="+919874653789"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#6699cc"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/iconcaregiver"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:id="@+id/care"
+        android:textSize="20sp"
+        android:text="CareGiver"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#6699cc"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/iconhealthcare"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/health"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:textSize="20sp"
+        android:text="Health Care team"/>
+    </RelativeLayout>
+
+</LinearLayout>

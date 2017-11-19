@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical" android:layout_width="match_parent" android:background="#ffffff"
+    android:layout_height="match_parent">
+    <include android:id="@+id/signup_toolbar"
+        layout="@layout/signup_toolbar"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="117dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="50dp"
+        android:src="@mipmap/signinlogonotext"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Tell us Who You Are"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+
+        android:textColor="#000000"
+        android:text="we use this information to customize the app for you"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_height="300dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_marginTop="140dp"
+            android:src="@mipmap/patient"/>
+
+        <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="265dp"
+        android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"
+android:textColor="#9e9b9b"
+        android:text="@string/i_am_a_patient" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="190dp"
+            android:src="@mipmap/iconcaregiver"/>
+
+        <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="265dp"
+            android:textColor="#9e9b9b"
+        android:layout_gravity="center"
+        android:layout_marginTop="58dp"
+            android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/i_am_care_taker" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="240dp"
+            android:src="@mipmap/iconhealthcare"/>
+
+        <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="265dp"
+        android:layout_marginTop="108dp"
+            android:layout_marginStart="50dp"
+        android:layout_gravity="center"
+            android:textColor="#9e9b9b"
+        android:layout_height="wrap_content"
+        android:text="Healthcare team" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_gravity="bottom|center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:text="Next" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="admin.eoe.squad.patient.LoginActivity">
+<include android:id="@+id/over_toolbar" layout="@layout/treatment_toolbar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Treatment overview"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:textAlignment="textStart"
+            android:textColor="#9966cc"
+            android:layout_marginBottom="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What's the big picture?"
+            android:textSize="18sp"
+            android:layout_marginStart="40dp"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:layout_marginBottom="100dp"/>
+
+
+        <CheckBox
+            android:id="@+id/over_checkBox"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:textColor="#9e9b9b"
+            android:layout_marginBottom="20dp"
+            android:text="I have known allergies" />
+        <CheckBox
+            android:id="@+id/over_checkBox1"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+android:textColor="#9e9b9b"
+            android:text="I am on a diet for EoE" />
+        <CheckBox
+            android:id="@+id/over_checkBox2"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+android:textColor="#9e9b9b"
+            android:text="I am taking Medication" />
+        <CheckBox
+            android:id="@+id/over_checkBox3"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+
+android:textColor="#9e9b9b"
+            android:text="I am taking vitamins/supplements" />
+
+
+        <Button
+            android:id="@+id/over_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff"
+            android:text="Next" />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

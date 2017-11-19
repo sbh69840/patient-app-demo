@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="admin.eoe.squad.patient.LoginActivity">
+<include android:id="@+id/diet_toolbar" layout="@layout/treatment_toolbar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iconallergies"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allergies"
+            android:layout_marginStart="45dp"
+            android:textSize="25sp"
+            android:textAlignment="textStart"
+            android:textColor="#9966cc"
+            />
+        </FrameLayout>
+<TextView
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:textColor="#000000"
+    android:layout_marginBottom="10dp"
+    android:text="what are you allergic to? Include foods and all other allergies"/>
+        <CheckBox
+            android:id="@+id/diet_checkBox"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#9e9b9b"
+            android:text="Dairy Milk (Sweet)" />
+        <CheckBox
+            android:id="@+id/diet_checkBox1"
+            android:layout_width="256dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#9e9b9b"
+            android:layout_height="wrap_content"
+            android:text="Wheat" />
+        <CheckBox
+            android:id="@+id/diet_checkBox2"
+            android:layout_width="256dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#9e9b9b"
+            android:layout_height="wrap_content"
+            android:text="Eggs" />
+        <CheckBox
+            android:id="@+id/diet_checkBox3"
+            android:layout_width="256dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#9e9b9b"
+            android:layout_height="wrap_content"
+            android:text="Soy" />
+        <CheckBox
+            android:id="@+id/diet_checkBox4"
+            android:layout_width="256dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#9e9b9b"
+            android:layout_height="wrap_content"
+            android:text="Peanuts" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="256dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/other_diet"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                android:hint="Others(Separated by commas)"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/diet_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="30dp"
+            android:text="Next" />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

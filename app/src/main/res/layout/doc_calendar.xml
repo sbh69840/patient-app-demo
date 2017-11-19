@@ -1,0 +1,54 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/untitled"
+            android:layout_height="521dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View More"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:id="@+id/viewmore"
+            android:textColor="#9966cc"
+            android:textStyle="bold"
+            android:typeface="monospace"/>
+    </LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/calendar_view"
+    android:visibility="gone"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cal_img"
+    android:src="@mipmap/ic212"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic1553"
+        android:id="@+id/cal_img_rep"
+        android:visibility="gone"
+        android:layout_below="@+id/cal_img"/>
+    <com.marcohc.robotocalendar.RobotoCalendarView
+        android:id="@+id/robotoCalendarPicker"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,98 @@
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="admin.eoe.squad.patient.LoginActivity">
+<include android:id="@+id/tool" layout="@layout/symptom_toolbar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track your symptoms today"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/t_checkBo"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#e47e66"
+            android:text="None" />
+        <View
+            android:layout_width="250dp"
+            android:layout_height="3dp"
+
+            android:background="#e47e66"/>
+        <CheckBox
+            android:id="@+id/t_checkBox"
+            android:layout_width="256dp"
+            android:buttonTint="#e47e66"
+            android:layout_height="wrap_content"
+            android:text="Dysphagia(Hard time working)" />
+        <CheckBox
+            android:id="@+id/t_checkBox1"
+            android:layout_width="256dp"
+            android:buttonTint="#e47e66"
+            android:layout_height="wrap_content"
+            android:text="Weight loss" />
+        <CheckBox
+            android:id="@+id/t_checkBox2"
+            android:layout_width="256dp"
+            android:buttonTint="#e47e66"
+            android:layout_height="wrap_content"
+            android:text="Chest pain" />
+        <CheckBox
+            android:id="@+id/t_checkBox3"
+            android:layout_width="256dp"
+            android:buttonTint="#e47e66"
+            android:layout_height="wrap_content"
+            android:text="Abdominal pain" />
+        <CheckBox
+            android:id="@+id/t_checkBox4"
+            android:layout_width="256dp"
+            android:buttonTint="#e47e66"
+            android:layout_height="wrap_content"
+            android:text="Nausea or vomiting" />
+        <CheckBox
+            android:id="@+id/t_checkBox5"
+            android:layout_width="256dp"
+            android:buttonTint="#e47e66"
+            android:layout_height="wrap_content"
+            android:text="Food Impaction(Food getting stuck)" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="256dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/other_t"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                android:hint="Others (Separated by commas)"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/t_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#e47e66"
+            android:textColor="#ffffff"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="50dp"
+            android:text="Save" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

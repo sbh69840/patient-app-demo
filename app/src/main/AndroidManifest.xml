@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="admin.eoe.squad.patient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher__"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="admin.eoe.squad.patient.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="admin.eoe.squad.patient.HomeMainFragment"/>
+        <activity
+            android:name="admin.eoe.squad.patient.SignupActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="admin.eoe.squad.patient.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="admin.eoe.squad.patient.BirthdayActivity"/>
+        <activity android:name="admin.eoe.squad.patient.DietActivity"/>
+        <activity android:name="admin.eoe.squad.patient.HowLong"/>
+        <activity android:name="admin.eoe.squad.patient.MedicationActivity"/>
+        <activity android:name="admin.eoe.squad.patient.Name_activity"/>
+        <activity android:name="admin.eoe.squad.patient.SupplementsActivity"/>
+        <activity android:name="admin.eoe.squad.patient.MedicationLength"/>
+        <activity android:name="admin.eoe.squad.patient.SupplementsLength"/>
+        <activity android:name="admin.eoe.squad.patient.TreatmentMain"/>
+        <activity android:name="admin.eoe.squad.patient.TellAboutU"/>
+        <activity android:name="admin.eoe.squad.patient.Intake"/>
+        <activity android:name="admin.eoe.squad.patient.Breakfast"/>
+        <activity android:name="admin.eoe.squad.patient.Lunch"/>
+        <activity android:name="admin.eoe.squad.patient.Dinner"/>
+        <activity android:name="admin.eoe.squad.patient.SymptomsMain"/>
+        <activity android:name="admin.eoe.squad.patient.track_symptoms"/>
+        <activity android:name=".DOCALLPATIENTS"/>
+        <activity android:name=".DocMainPatients"/>
+        <activity android:name=".DocMain"/>
+        <activity android:name=".WantToTrack"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".TreatmentOverveiw"/>
+        <activity android:name=".EoeDiet"/>
+        <activity android:name=".Eoedietlist"/>
+        <activity android:name=".MedicationSub"/>
+        <activity android:name=".OtherActivity"/>
+        <activity android:name=".OtherSub"/>
+        <activity android:name=".NextAppointment"/>
+        <activity android:name=".ScoreMain"/>
+        <activity android:name=".SupplementsSub"/>
+        <activity android:name=".Game1"/>
+        <activity android:name=".Game2"/>
+        <activity android:name=".BreakSub"/>
+        <activity android:name=".DinnerSub"/>
+        <activity android:name=".LunchSub"/>
+        <activity android:name=".Snack"/>
+        <activity android:name=".SnackSub"/>
+        <activity android:name=".Meds"/>
+        <activity android:name=".Pollen"/>
+        <activity android:name=".TrackDay"/>
+        
+
+    </application>
+
+</manifest>

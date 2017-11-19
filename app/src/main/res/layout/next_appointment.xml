@@ -1,0 +1,140 @@
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="admin.eoe.squad.patient.LoginActivity">
+    <include android:id="@+id/over_toolbar" layout="@layout/treatment_toolbar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/iconappointment"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Appointment"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="40dp"
+            android:textAlignment="textStart"
+            android:textColor="#9966cc"
+            android:layout_marginBottom="15dp"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="when is your next appointment?"
+            android:textSize="18sp"
+            android:layout_marginStart="40dp"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:layout_marginBottom="40dp"/>
+
+<FrameLayout
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_cal"
+        android:src="@mipmap/iconcalendar"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/month"
+        android:textSize="18sp"
+        android:id="@+id/next_val_tv"
+        android:textColor="#000000"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="40dp"/>
+</FrameLayout>
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/next_time"
+
+                android:src="@mipmap/appointmenttime"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to set time"
+                android:textSize="18sp"
+                android:id="@+id/next_time_tv"
+                android:textColor="#000000"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="40dp"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/next_loc"
+
+                android:src="@mipmap/iconlocation"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sickkids hospital room 810"
+                android:textSize="18sp"
+                android:id="@+id/next_loc_tv"
+                android:textColor="#000000"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="40dp"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/next_note"
+
+                android:src="@mipmap/iconnotes"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bring EoE Squad report printed(2 Copies) Will see doctor and dietitian"
+                android:textSize="18sp"
+                android:id="@+id/next_note_tv"
+                android:textColor="#000000"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="40dp"/>
+        </FrameLayout>
+        <Button
+            android:id="@+id/over_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff"
+            android:text="Next" />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

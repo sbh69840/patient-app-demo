@@ -1,0 +1,100 @@
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="admin.eoe.squad.patient.LoginActivity">
+<include android:id="@+id/too" layout="@layout/intake_toolbar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:text="What did you eat today?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+
+
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000"
+            android:text="Good job keep tracking your meals daily."/>
+        <Button
+            android:id="@+id/intake_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:backgroundTint="#ccb44e"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:text="Breakfast" />
+        <Button
+            android:id="@+id/intake_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ccb44e"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Snack 1" />
+        <Button
+            android:id="@+id/intake_lunch"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#ccb44e"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Lunch" />
+        <Button
+            android:id="@+id/intake_snack2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ccb44e"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Snack 2" />
+        <Button
+            android:id="@+id/intake_dinner"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#ccb44e"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="10dp"
+            android:text="Dinner" />
+        <Button
+            android:id="@+id/intake_snack3"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#ccb44e"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Snack3" />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
